@@ -1,0 +1,15 @@
+{
+    "name": "schusterdev/sms",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andres Schuster",
+            "email": "andres.schuster@gmail.com"
+        }
+    ],
+    "require": {
+        "phpoffice/phpspreadsheet": "^1.22",
+        "twbs/bootstrap": "5.1.3"
+    }
+}
