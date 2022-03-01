@@ -19,6 +19,7 @@ class ComposerStaticInitf6b358c9f327728ebc138098daeff042
         'S' => 
         array (
             'Symfony\\Polyfill\\Mbstring\\' => 26,
+            'Schusterdev\\SmsSystem\\' => 22,
         ),
         'P' => 
         array (
@@ -46,6 +47,10 @@ class ComposerStaticInitf6b358c9f327728ebc138098daeff042
         'Symfony\\Polyfill\\Mbstring\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
+        ),
+        'Schusterdev\\SmsSystem\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
         ),
         'Psr\\SimpleCache\\' => 
         array (
@@ -88,12 +93,17 @@ class ComposerStaticInitf6b358c9f327728ebc138098daeff042
         ),
     );
 
+    public static $classMap = array (
+        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInitf6b358c9f327728ebc138098daeff042::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInitf6b358c9f327728ebc138098daeff042::$prefixDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInitf6b358c9f327728ebc138098daeff042::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInitf6b358c9f327728ebc138098daeff042::$classMap;
 
         }, null, ClassLoader::class);
     }
