@@ -71,7 +71,7 @@
                                     <td><?php echo $fetchSMSData['smsMessage']?></td>
                                     <td><?php echo $fetchSMSData['sendDate']?></td>
                                     <td><?php echo $fetchSMSData['smsStatus']?></td>
-                                    <td><a href="./sendMessage.php?id=<?php echo $fetchSMSData['smsID'] ?>" class="send-SMS btn btn-primary btn-sm">Editar</a></td>
+                                    <td><a href="./sendSMS.php?id=<?php echo $fetchSMSData['smsID'] ?>" class="send-SMS btn btn-primary btn-sm">Editar</a></td>
                                     <td><a href="javascript:deleteSMS(<?php echo $fetchSMSData['smsID'] ?>)" class="delete-SMS btn btn-danger btn-sm">Eliminar</a></td>
                                 </tr>
                                 <?php 
