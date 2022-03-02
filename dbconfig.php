@@ -1,4 +1,5 @@
 <?php
+
 function connect(){
     $host = "localhost";
     $username = "dbhandler";

@@ -75,7 +75,7 @@
                                     <td><?php echo $fetchJobRow['smsDelivered']?></td>
                                     <td><?php echo $fetchJobRow['smsUndelivered']?></td>
                                     <td><?php echo $fetchJobRow['smsFailed']?></td>
-                                    <td><a href="./editUser.php?id=<?php echo $fetchJobRow['jobID'] ?>" class="update-user btn btn-primary btn-sm">Editar</a></td>
+                                    <td><a href="./smsCampaing.php?id=<?php echo $fetchJobRow['jobID'] ?>" class="update-user btn btn-primary btn-sm">Editar</a></td>
                                     <td><a href="javascript:deleteJob(<?php echo $fetchJobRow['jobID'] ?>)" class="delete-user btn btn-danger btn-sm">Eliminar</a></td>
                                 </tr>
                                 <?php 
@@ -110,6 +110,7 @@
                                     name="file" 
                                     id="file" 
                                     class="form-control" 
+                                    onchange= "return fileValidation()" 
                                     required 
                                 />
                                 
@@ -155,6 +156,7 @@
             ></script>
         </div>
     </div>
+    <script src="./scriptsFunctions.js"></script>
 </body>
 
 </html>
